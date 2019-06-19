@@ -14,10 +14,3 @@ spec:
     volumeMounts:
     - name: multicontainer-log
       mountPath: /var/log
-  - name: helper-container
-    image: nginx 
-    ports:
-      - containerPort: 80
-    volumeMounts:
-    - name: multicontainer-log
-      mountPath: /usr/share/nginx/html
